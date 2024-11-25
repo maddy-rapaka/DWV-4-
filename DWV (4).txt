@@ -1,0 +1,1479 @@
+
+1)
+import pandas as pd
+df=pd.read_csv(r'C:\Users\Admin\Desktop\CMRIT\DW&DV\Third_Program\Child Labour in India.csv')
+df
+
+Category of States	States	Agriculture	Manufacturing	Construction	Trade Hotels & Restaurants	Community, Social and Personal Services	Others	Total
+0	Non Special Category states	Andhra Pradesh	69.0	9.7	3.2	9.0	7.1	2.0	100
+1	Non Special Category states	Assam	69.3	8.4	1.8	7.8	11.0	1.8	100
+2	Non Special Category states	Bihar	71.8	11.2	0.0	15.5	1.1	0.5	100
+3	Non Special Category states	Chhattisgarh	87.9	2.4	0.9	7.2	1.7	NaN	100
+4	Non Special Category states	Delhi	NaN	11.1	NaN	57.8	31.1	NaN	100
+5	Non Special Category states	Gujarat	76.7	2.6	0.3	17.8	1.5	1.2	100
+6	Non Special Category states	Haryana	65.6	3.8	7.0	8.1	15.5	NaN	100
+7	Non Special Category states	Jharkhand	65.3	14.6	4.3	12.1	2.8	0.9	100
+8	Non Special Category states	Karnataka	82.6	9.3	1.2	5.7	0.3	0.9	100
+9	Non Special Category states	Kerala	19.2	32.8	NaN	32.0	16.1	NaN	100
+10	Non Special Category states	Madhya Pradesh	82.9	9. 9	1.5	4.3	1.3	0.0	100
+11	Non Special Category states	Maharashtra	82.6	5.3	1.9	5.8	4.1	0.3	100
+12	Non Special Category states	Orissa	73.2	17.4	3.3	3.3	1.1	1.8	100
+13	Non Special Category states	Punjab	67.9	12.7	1.2	7.2	8.4	2.6	100
+14	Non Special Category states	Rajasthan	75.8	9.6	2.9	7.3	0.4	4.0	100
+15	Non Special Category states	Tamil Nadu	39.5	44.6	5.9	5.7	2.7	1.7	100
+16	Non Special Category states	Uttar Pradesh	61.2	25.3	0.4	9.7	2.1	1.2	100
+17	Non Special Category states	Uttar Pradesh	61.2	25.3	0.4	9.7	2.1	1.2	100
+18	Non Special Category states	West Bengal	34.6	43.9	3.3	9.7	6.6	2.0	100
+19	Special Category States	Himachal Pradesh	87.4	NaN	NaN	6.7	4.7	1.2	100
+20	Special Category States	Uttarakhand	80.7	4.7	5.2	9.3	NaN	NaN	100
+21	Special Category States	Uttarakhand	80.7	4.7	5.2	9.3	NaN	NaN	100
+22	All India	All India	68.1	16.6	2.0	8.5	3.4	1.5	100
+23	Non Special Category states	Andhra Pradesh	69.0	9.7	4.0	8.0	7.1	2.0	100
+24	Non Special Category states*	Biha r*	71.8	11.2	0.0	15.5	1.1	0.5	100
+2) 
+df=pd.read_csv('Child Labour in India.csv')
+df
+
+Category of States	States	Agriculture	Manufacturing	Construction	Trade Hotels & Restaurants	Community, Social and Personal Services	Others	Total
+0	Non Special Category states	Andhra Pradesh	69.0	9.7	3.2	9.0	7.1	2.0	100
+1	Non Special Category states	Assam	69.3	8.4	1.8	7.8	11.0	1.8	100
+2	Non Special Category states	Bihar	71.8	11.2	0.0	15.5	1.1	0.5	100
+3	Non Special Category states	Chhattisgarh	87.9	2.4	0.9	7.2	1.7	NaN	100
+4	Non Special Category states	Delhi	NaN	11.1	NaN	57.8	31.1	NaN	100
+5	Non Special Category states	Gujarat	76.7	2.6	0.3	17.8	1.5	1.2	100
+6	Non Special Category states	Haryana	65.6	3.8	7.0	8.1	15.5	NaN	100
+7	Non Special Category states	Jharkhand	65.3	14.6	4.3	12.1	2.8	0.9	100
+8	Non Special Category states	Karnataka	82.6	9.3	1.2	5.7	0.3	0.9	100
+9	Non Special Category states	Kerala	19.2	32.8	NaN	32.0	16.1	NaN	100
+10	Non Special Category states	Madhya Pradesh	82.9	9. 9	1.5	4.3	1.3	0.0	100
+11	Non Special Category states	Maharashtra	82.6	5.3	1.9	5.8	4.1	0.3	100
+12	Non Special Category states	Orissa	73.2	17.4	3.3	3.3	1.1	1.8	100
+13	Non Special Category states	Punjab	67.9	12.7	1.2	7.2	8.4	2.6	100
+14	Non Special Category states	Rajasthan	75.8	9.6	2.9	7.3	0.4	4.0	100
+15	Non Special Category states	Tamil Nadu	39.5	44.6	5.9	5.7	2.7	1.7	100
+16	Non Special Category states	Uttar Pradesh	61.2	25.3	0.4	9.7	2.1	1.2	100
+17	Non Special Category states	Uttar Pradesh	61.2	25.3	0.4	9.7	2.1	1.2	100
+18	Non Special Category states	West Bengal	34.6	43.9	3.3	9.7	6.6	2.0	100
+19	Special Category States	Himachal Pradesh	87.4	NaN	NaN	6.7	4.7	1.2	100
+20	Special Category States	Uttarakhand	80.7	4.7	5.2	9.3	NaN	NaN	100
+21	Special Category States	Uttarakhand	80.7	4.7	5.2	9.3	NaN	NaN	100
+22	All India	All India	68.1	16.6	2.0	8.5	3.4	1.5	100
+23	Non Special Category states	Andhra Pradesh	69.0	9.7	4.0	8.0	7.1	2.0	100
+24	Non Special Category states*	Biha r*	71.8	11.2	0.0	15.5	1.1	0.5	100
+3)
+df.shape
+
+(25, 9)
+4)
+df.columns
+
+Index(['Category of States', 'States', 'Agriculture', 'Manufacturing',
+       'Construction', 'Trade Hotels & Restaurants',
+       'Community, Social and Personal Services', 'Others', 'Total'],
+      dtype='object')
+5)
+df.dtypes
+
+Category of States                          object
+States                                      object
+Agriculture                                float64
+Manufacturing                               object
+Construction                               float64
+Trade Hotels & Restaurants                 float64
+Community, Social and Personal Services    float64
+Others                                     float64
+Total                                        int64
+dtype: object
+6)
+df.info()
+
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 25 entries, 0 to 24
+Data columns (total 9 columns):
+ #   Column                                   Non-Null Count  Dtype  
+---  ------                                   --------------  -----  
+ 0   Category of States                       25 non-null     object 
+ 1   States                                   25 non-null     object 
+ 2   Agriculture                              24 non-null     float64
+ 3   Manufacturing                            24 non-null     object 
+ 4   Construction                             22 non-null     float64
+ 5   Trade Hotels & Restaurants               25 non-null     float64
+ 6   Community, Social and Personal Services  23 non-null     float64
+ 7   Others                                   19 non-null     float64
+ 8   Total                                    25 non-null     int64  
+dtypes: float64(5), int64(1), object(3)
+memory usage: 1.9+ KB
+7)
+df.describe()
+
+Agriculture	Construction	Trade Hotels & Restaurants	Community, Social and Personal Services	Others	Total
+count	24.000000	22.000000	25.000000	23.000000	19.000000	25.0
+mean	68.500000	2.540909	11.720000	5.795652	1.436842	100.0
+std	16.613536	2.046753	11.186748	7.119658	0.916643	0.0
+min	19.200000	0.000000	3.300000	0.300000	0.000000	100.0
+25%	65.525000	0.975000	7.200000	1.400000	0.900000	100.0
+50%	70.550000	1.950000	8.500000	2.800000	1.200000	100.0
+75%	80.700000	3.825000	9.700000	7.100000	1.900000	100.0
+max	87.900000	7.000000	57.800000	31.100000	4.000000	100.0
+8)
+df.head()
+
+Category of States	States	Agriculture	Manufacturing	Construction	Trade Hotels & Restaurants	Community, Social and Personal Services	Others	Total
+0	Non Special Category states	Andhra Pradesh	69.0	9.7	3.2	9.0	7.1	2.0	100
+1	Non Special Category states	Assam	69.3	8.4	1.8	7.8	11.0	1.8	100
+2	Non Special Category states	Bihar	71.8	11.2	0.0	15.5	1.1	0.5	100
+3	Non Special Category states	Chhattisgarh	87.9	2.4	0.9	7.2	1.7	NaN	100
+4	Non Special Category states	Delhi	NaN	11.1	NaN	57.8	31.1	NaN	100
+9)
+df.tail()
+
+Category of States	States	Agriculture	Manufacturing	Construction	Trade Hotels & Restaurants	Community, Social and Personal Services	Others	Total
+20	Special Category States	Uttarakhand	80.7	4.7	5.2	9.3	NaN	NaN	100
+21	Special Category States	Uttarakhand	80.7	4.7	5.2	9.3	NaN	NaN	100
+22	All India	All India	68.1	16.6	2.0	8.5	3.4	1.5	100
+23	Non Special Category states	Andhra Pradesh	69.0	9.7	4.0	8.0	7.1	2.0	100
+24	Non Special Category states*	Biha r*	71.8	11.2	0.0	15.5	1.1	0.5	100
+10)
+df.head(1)
+
+Category of States	States	Agriculture	Manufacturing	Construction	Trade Hotels & Restaurants	Community, Social and Personal Services	Others	Total
+0	Non Special Category states	Andhra Pradesh	69.0	9.7	3.2	9.0	7.1	2.0	100
+11)
+df.tail(1)
+
+Category of States	States	Agriculture	Manufacturing	Construction	Trade Hotels & Restaurants	Community, Social and Personal Services	Others	Total
+24	Non Special Category states*	Biha r*	71.8	11.2	0.0	15.5	1.1	0.5	100
+12)
+df.duplicated()
+
+0     False
+1     False
+2     False
+3     False
+4     False
+5     False
+6     False
+7     False
+8     False
+9     False
+10    False
+11    False
+12    False
+13    False
+14    False
+15    False
+16    False
+17     True
+18    False
+19    False
+20    False
+21     True
+22    False
+23    False
+24    False
+dtype: bool
+13)
+df.duplicated().sum()
+
+2
+14)
+duplicated=df[df.duplicated()]
+duplicated
+
+Category of States	States	Agriculture	Manufacturing	Construction	Trade Hotels & Restaurants	Community, Social and Personal Services	Others	Total
+17	Non Special Category states	Uttar Pradesh	61.2	25.3	0.4	9.7	2.1	1.2	100
+21	Special Category States	Uttarakhand	80.7	4.7	5.2	9.3	NaN	NaN	100
+15)
+df['States'].duplicated()
+
+0     False
+1     False
+2     False
+3     False
+4     False
+5     False
+6     False
+7     False
+8     False
+9     False
+10    False
+11    False
+12    False
+13    False
+14    False
+15    False
+16    False
+17     True
+18    False
+19    False
+20    False
+21     True
+22    False
+23     True
+24    False
+Name: States, dtype: bool
+16)
+df['States'].duplicated().sum()
+
+3
+17)
+duplicated_states=df[df['States'].duplicated()]
+duplicated_states
+
+Category of States	States	Agriculture	Manufacturing	Construction	Trade Hotels & Restaurants	Community, Social and Personal Services	Others	Total
+17	Non Special Category states	Uttar Pradesh	61.2	25.3	0.4	9.7	2.1	1.2	100
+21	Special Category States	Uttarakhand	80.7	4.7	5.2	9.3	NaN	NaN	100
+23	Non Special Category states	Andhra Pradesh	69.0	9.7	4.0	8.0	7.1	2.0	100
+18)
+df.drop_duplicates()
+
+Category of States	States	Agriculture	Manufacturing	Construction	Trade Hotels & Restaurants	Community, Social and Personal Services	Others	Total
+0	Non Special Category states	Andhra Pradesh	69.0	9.7	3.2	9.0	7.1	2.0	100
+1	Non Special Category states	Assam	69.3	8.4	1.8	7.8	11.0	1.8	100
+2	Non Special Category states	Bihar	71.8	11.2	0.0	15.5	1.1	0.5	100
+3	Non Special Category states	Chhattisgarh	87.9	2.4	0.9	7.2	1.7	NaN	100
+4	Non Special Category states	Delhi	NaN	11.1	NaN	57.8	31.1	NaN	100
+5	Non Special Category states	Gujarat	76.7	2.6	0.3	17.8	1.5	1.2	100
+6	Non Special Category states	Haryana	65.6	3.8	7.0	8.1	15.5	NaN	100
+7	Non Special Category states	Jharkhand	65.3	14.6	4.3	12.1	2.8	0.9	100
+8	Non Special Category states	Karnataka	82.6	9.3	1.2	5.7	0.3	0.9	100
+9	Non Special Category states	Kerala	19.2	32.8	NaN	32.0	16.1	NaN	100
+10	Non Special Category states	Madhya Pradesh	82.9	9. 9	1.5	4.3	1.3	0.0	100
+11	Non Special Category states	Maharashtra	82.6	5.3	1.9	5.8	4.1	0.3	100
+12	Non Special Category states	Orissa	73.2	17.4	3.3	3.3	1.1	1.8	100
+13	Non Special Category states	Punjab	67.9	12.7	1.2	7.2	8.4	2.6	100
+14	Non Special Category states	Rajasthan	75.8	9.6	2.9	7.3	0.4	4.0	100
+15	Non Special Category states	Tamil Nadu	39.5	44.6	5.9	5.7	2.7	1.7	100
+16	Non Special Category states	Uttar Pradesh	61.2	25.3	0.4	9.7	2.1	1.2	100
+18	Non Special Category states	West Bengal	34.6	43.9	3.3	9.7	6.6	2.0	100
+19	Special Category States	Himachal Pradesh	87.4	NaN	NaN	6.7	4.7	1.2	100
+20	Special Category States	Uttarakhand	80.7	4.7	5.2	9.3	NaN	NaN	100
+22	All India	All India	68.1	16.6	2.0	8.5	3.4	1.5	100
+23	Non Special Category states	Andhra Pradesh	69.0	9.7	4.0	8.0	7.1	2.0	100
+24	Non Special Category states*	Biha r*	71.8	11.2	0.0	15.5	1.1	0.5	100
+18)
+df['States'].drop_duplicates()
+
+0       Andhra Pradesh
+1                Assam
+2                Bihar
+3         Chhattisgarh
+4                Delhi
+5              Gujarat
+6              Haryana
+7            Jharkhand
+8            Karnataka
+9               Kerala
+10      Madhya Pradesh
+11         Maharashtra
+12              Orissa
+13              Punjab
+14           Rajasthan
+15          Tamil Nadu
+16       Uttar Pradesh
+18         West Bengal
+19    Himachal Pradesh
+20         Uttarakhand
+22           All India
+24        Biha      r*
+Name: States, dtype: object
+19)
+a=df['States'].drop_duplicates()
+a
+
+0       Andhra Pradesh
+1                Assam
+2                Bihar
+3         Chhattisgarh
+4                Delhi
+5              Gujarat
+6              Haryana
+7            Jharkhand
+8            Karnataka
+9               Kerala
+10      Madhya Pradesh
+11         Maharashtra
+12              Orissa
+13              Punjab
+14           Rajasthan
+15          Tamil Nadu
+16       Uttar Pradesh
+18         West Bengal
+19    Himachal Pradesh
+20         Uttarakhand
+22           All India
+24        Biha      r*
+Name: States, dtype: object
+20)
+df['States']
+
+0       Andhra Pradesh
+1                Assam
+2                Bihar
+3         Chhattisgarh
+4                Delhi
+5              Gujarat
+6              Haryana
+7            Jharkhand
+8            Karnataka
+9               Kerala
+10      Madhya Pradesh
+11         Maharashtra
+12              Orissa
+13              Punjab
+14           Rajasthan
+15          Tamil Nadu
+16       Uttar Pradesh
+17       Uttar Pradesh
+18         West Bengal
+19    Himachal Pradesh
+20         Uttarakhand
+21         Uttarakhand
+22           All India
+23      Andhra Pradesh
+24        Biha      r*
+Name: States, dtype: object
+21)
+df.drop_duplicates(subset=['Category of States'])
+
+Category of States	States	Agriculture	Manufacturing	Construction	Trade Hotels & Restaurants	Community, Social and Personal Services	Others	Total
+0	Non Special Category states	Andhra Pradesh	69.0	9.7	3.2	9.0	7.1	2.0	100
+19	Special Category States	Himachal Pradesh	87.4	NaN	NaN	6.7	4.7	1.2	100
+22	All India	All India	68.1	16.6	2.0	8.5	3.4	1.5	100
+24	Non Special Category states*	Biha r*	71.8	11.2	0.0	15.5	1.1	0.5	100
+22)
+df
+
+Category of States	States	Agriculture	Manufacturing	Construction	Trade Hotels & Restaurants	Community, Social and Personal Services	Others	Total
+0	Non Special Category states	Andhra Pradesh	69.0	9.7	3.2	9.0	7.1	2.0	100
+1	Non Special Category states	Assam	69.3	8.4	1.8	7.8	11.0	1.8	100
+2	Non Special Category states	Bihar	71.8	11.2	0.0	15.5	1.1	0.5	100
+3	Non Special Category states	Chhattisgarh	87.9	2.4	0.9	7.2	1.7	NaN	100
+4	Non Special Category states	Delhi	NaN	11.1	NaN	57.8	31.1	NaN	100
+5	Non Special Category states	Gujarat	76.7	2.6	0.3	17.8	1.5	1.2	100
+6	Non Special Category states	Haryana	65.6	3.8	7.0	8.1	15.5	NaN	100
+7	Non Special Category states	Jharkhand	65.3	14.6	4.3	12.1	2.8	0.9	100
+8	Non Special Category states	Karnataka	82.6	9.3	1.2	5.7	0.3	0.9	100
+9	Non Special Category states	Kerala	19.2	32.8	NaN	32.0	16.1	NaN	100
+10	Non Special Category states	Madhya Pradesh	82.9	9. 9	1.5	4.3	1.3	0.0	100
+11	Non Special Category states	Maharashtra	82.6	5.3	1.9	5.8	4.1	0.3	100
+12	Non Special Category states	Orissa	73.2	17.4	3.3	3.3	1.1	1.8	100
+13	Non Special Category states	Punjab	67.9	12.7	1.2	7.2	8.4	2.6	100
+14	Non Special Category states	Rajasthan	75.8	9.6	2.9	7.3	0.4	4.0	100
+15	Non Special Category states	Tamil Nadu	39.5	44.6	5.9	5.7	2.7	1.7	100
+16	Non Special Category states	Uttar Pradesh	61.2	25.3	0.4	9.7	2.1	1.2	100
+18	Non Special Category states	West Bengal	34.6	43.9	3.3	9.7	6.6	2.0	100
+19	Special Category States	Himachal Pradesh	87.4	NaN	NaN	6.7	4.7	1.2	100
+20	Special Category States	Uttarakhand	80.7	4.7	5.2	9.3	NaN	NaN	100
+22	All India	All India	68.1	16.6	2.0	8.5	3.4	1.5	100
+24	Non Special Category states*	Biha r*	71.8	11.2	0.0	15.5	1.1	0.5	100
+23)
+df.drop_duplicates(subset=['Category of States'],inplace=True)
+df
+
+Category of States	States	Agriculture	Manufacturing	Construction	Trade Hotels & Restaurants	Community, Social and Personal Services	Others	Total
+0	Non Special Category states	Andhra Pradesh	69.0	9.7	3.2	9.0	7.1	2.0	100
+19	Special Category States	Himachal Pradesh	87.4	NaN	NaN	6.7	4.7	1.2	100
+22	All India	All India	68.1	16.6	2.0	8.5	3.4	1.5	100
+24	Non Special Category states*	Biha r*	71.8	11.2	0.0	15.5	1.1	0.5	100
+
+24)
+df
+
+Category of States	States	Agriculture	Manufacturing	Construction	Trade Hotels & Restaurants	Community, Social and Personal Services	Others	Total
+0	Non Special Category states	Andhra Pradesh	69.0	9.7	3.2	9.0	7.1	2.0	100
+19	Special Category States	Himachal Pradesh	87.4	NaN	NaN	6.7	4.7	1.2	100
+22	All India	All India	68.1	16.6	2.0	8.5	3.4	1.5	100
+24	Non Special Category states*	Biha r*	71.8	11.2	0.0	15.5	1.1	0.5	100
+
+25)
+df
+
+Category of States	States	Agriculture	Manufacturing	Construction	Trade Hotels & Restaurants	Community, Social and Personal Services	Others	Total
+0	Non Special Category states	Andhra Pradesh	69.0	9.7	3.2	9.0	7.1	2.0	100
+1	Non Special Category states	Assam	69.3	8.4	1.8	7.8	11.0	1.8	100
+2	Non Special Category states	Bihar	71.8	11.2	0.0	15.5	1.1	0.5	100
+3	Non Special Category states	Chhattisgarh	87.9	2.4	0.9	7.2	1.7	NaN	100
+4	Non Special Category states	Delhi	NaN	11.1	NaN	57.8	31.1	NaN	100
+5	Non Special Category states	Gujarat	76.7	2.6	0.3	17.8	1.5	1.2	100
+6	Non Special Category states	Haryana	65.6	3.8	7.0	8.1	15.5	NaN	100
+7	Non Special Category states	Jharkhand	65.3	14.6	4.3	12.1	2.8	0.9	100
+8	Non Special Category states	Karnataka	82.6	9.3	1.2	5.7	0.3	0.9	100
+9	Non Special Category states	Kerala	19.2	32.8	NaN	32.0	16.1	NaN	100
+10	Non Special Category states	Madhya Pradesh	82.9	9. 9	1.5	4.3	1.3	0.0	100
+11	Non Special Category states	Maharashtra	82.6	5.3	1.9	5.8	4.1	0.3	100
+12	Non Special Category states	Orissa	73.2	17.4	3.3	3.3	1.1	1.8	100
+13	Non Special Category states	Punjab	67.9	12.7	1.2	7.2	8.4	2.6	100
+14	Non Special Category states	Rajasthan	75.8	9.6	2.9	7.3	0.4	4.0	100
+15	Non Special Category states	Tamil Nadu	39.5	44.6	5.9	5.7	2.7	1.7	100
+16	Non Special Category states	Uttar Pradesh	61.2	25.3	0.4	9.7	2.1	1.2	100
+17	Non Special Category states	Uttar Pradesh	61.2	25.3	0.4	9.7	2.1	1.2	100
+18	Non Special Category states	West Bengal	34.6	43.9	3.3	9.7	6.6	2.0	100
+19	Special Category States	Himachal Pradesh	87.4	NaN	NaN	6.7	4.7	1.2	100
+20	Special Category States	Uttarakhand	80.7	4.7	5.2	9.3	NaN	NaN	100
+21	Special Category States	Uttarakhand	80.7	4.7	5.2	9.3	NaN	NaN	100
+22	All India	All India	68.1	16.6	2.0	8.5	3.4	1.5	100
+23	Non Special Category states	Andhra Pradesh	69.0	9.7	4.0	8.0	7.1	2.0	100
+24	Non Special Category states*	Biha r*	71.8	11.2	0.0	15.5	1.1	0.5	100
+
+26)df1=df.copy()
+df1
+
+Category of States	States	Agriculture	Manufacturing	Construction	Trade Hotels & Restaurants	Community, Social and Personal Services	Others	Total
+0	Non Special Category states	Andhra Pradesh	69.0	9.7	3.2	9.0	7.1	2.0	100
+1	Non Special Category states	Assam	69.3	8.4	1.8	7.8	11.0	1.8	100
+2	Non Special Category states	Bihar	71.8	11.2	0.0	15.5	1.1	0.5	100
+3	Non Special Category states	Chhattisgarh	87.9	2.4	0.9	7.2	1.7	NaN	100
+4	Non Special Category states	Delhi	NaN	11.1	NaN	57.8	31.1	NaN	100
+5	Non Special Category states	Gujarat	76.7	2.6	0.3	17.8	1.5	1.2	100
+6	Non Special Category states	Haryana	65.6	3.8	7.0	8.1	15.5	NaN	100
+7	Non Special Category states	Jharkhand	65.3	14.6	4.3	12.1	2.8	0.9	100
+8	Non Special Category states	Karnataka	82.6	9.3	1.2	5.7	0.3	0.9	100
+9	Non Special Category states	Kerala	19.2	32.8	NaN	32.0	16.1	NaN	100
+10	Non Special Category states	Madhya Pradesh	82.9	9. 9	1.5	4.3	1.3	0.0	100
+11	Non Special Category states	Maharashtra	82.6	5.3	1.9	5.8	4.1	0.3	100
+12	Non Special Category states	Orissa	73.2	17.4	3.3	3.3	1.1	1.8	100
+13	Non Special Category states	Punjab	67.9	12.7	1.2	7.2	8.4	2.6	100
+14	Non Special Category states	Rajasthan	75.8	9.6	2.9	7.3	0.4	4.0	100
+15	Non Special Category states	Tamil Nadu	39.5	44.6	5.9	5.7	2.7	1.7	100
+16	Non Special Category states	Uttar Pradesh	61.2	25.3	0.4	9.7	2.1	1.2	100
+17	Non Special Category states	Uttar Pradesh	61.2	25.3	0.4	9.7	2.1	1.2	100
+18	Non Special Category states	West Bengal	34.6	43.9	3.3	9.7	6.6	2.0	100
+19	Special Category States	Himachal Pradesh	87.4	NaN	NaN	6.7	4.7	1.2	100
+20	Special Category States	Uttarakhand	80.7	4.7	5.2	9.3	NaN	NaN	100
+21	Special Category States	Uttarakhand	80.7	4.7	5.2	9.3	NaN	NaN	100
+22	All India	All India	68.1	16.6	2.0	8.5	3.4	1.5	100
+23	Non Special Category states	Andhra Pradesh	69.0	9.7	4.0	8.0	7.1	2.0	100
+24	Non Special Category states*	Biha r*	71.8	11.2	0.0	15.5	1.1	0.5	100
+
+27)
+df.isnull()
+
+Category of States	States	Agriculture	Manufacturing	Construction	Trade Hotels & Restaurants	Community, Social and Personal Services	Others	Total
+0	False	False	False	False	False	False	False	False	False
+1	False	False	False	False	False	False	False	False	False
+2	False	False	False	False	False	False	False	False	False
+3	False	False	False	False	False	False	False	True	False
+4	False	False	True	False	True	False	False	True	False
+5	False	False	False	False	False	False	False	False	False
+6	False	False	False	False	False	False	False	True	False
+7	False	False	False	False	False	False	False	False	False
+8	False	False	False	False	False	False	False	False	False
+9	False	False	False	False	True	False	False	True	False
+10	False	False	False	False	False	False	False	False	False
+11	False	False	False	False	False	False	False	False	False
+12	False	False	False	False	False	False	False	False	False
+13	False	False	False	False	False	False	False	False	False
+14	False	False	False	False	False	False	False	False	False
+15	False	False	False	False	False	False	False	False	False
+16	False	False	False	False	False	False	False	False	False
+17	False	False	False	False	False	False	False	False	False
+18	False	False	False	False	False	False	False	False	False
+19	False	False	False	True	True	False	False	False	False
+20	False	False	False	False	False	False	True	True	False
+21	False	False	False	False	False	False	True	True	False
+22	False	False	False	False	False	False	False	False	False
+23	False	False	False	False	False	False	False	False	False
+24	False	False	False	False	False	False	False	False	False
+
+28)
+df.isnull().sum()
+
+Category of States                         0
+States                                     0
+Agriculture                                1
+Manufacturing                              1
+Construction                               3
+Trade Hotels & Restaurants                 0
+Community, Social and Personal Services    2
+Others                                     6
+Total                                      0
+dtype: int64
+
+29)
+df.isnull().sum().sum()
+
+13
+
+30)
+df_null=pd.read_csv(r'C:\Users\Admin\Desktop\CMRIT\DW&DV\Third_Program\Child Labour in India null.csv')
+df_null
+
+Category of States	States	Agriculture	Manufacturing	Construction	Trade Hotels & Restaurants	Community, Social and Personal Services	Others	Total
+0	Non Special Category states	Andhra Pradesh	69.0	9.7	3.2	9.0	7.1	2.0	100.0
+1	Non Special Category states	Assam	69.3	8.4	1.8	7.8	11.0	1.8	100.0
+2	Non Special Category states	Bihar	71.8	11.2	0.0	15.5	1.1	0.5	100.0
+3	Non Special Category states	Chhattisgarh	87.9	2.4	0.9	7.2	1.7	NaN	100.0
+4	Non Special Category states	Delhi	NaN	11.1	NaN	57.8	31.1	NaN	100.0
+5	Non Special Category states	Gujarat	76.7	2.6	0.3	17.8	1.5	1.2	100.0
+6	Non Special Category states	Haryana	65.6	3.8	7.0	8.1	15.5	NaN	100.0
+7	Non Special Category states	Jharkhand	65.3	14.6	4.3	12.1	2.8	0.9	100.0
+8	Non Special Category states	Karnataka	82.6	9.3	1.2	5.7	0.3	0.9	100.0
+9	Non Special Category states	Kerala	19.2	32.8	NaN	32.0	16.1	NaN	100.0
+10	Non Special Category states	Madhya Pradesh	82.9	9. 9	1.5	4.3	1.3	0.0	100.0
+11	Non Special Category states	Maharashtra	82.6	5.3	1.9	5.8	4.1	0.3	100.0
+12	Non Special Category states	Orissa	73.2	17.4	3.3	3.3	1.1	1.8	100.0
+13	Non Special Category states	Punjab	67.9	12.7	1.2	7.2	8.4	2.6	100.0
+14	Non Special Category states	Rajasthan	75.8	9.6	2.9	7.3	0.4	4.0	100.0
+15	Non Special Category states	Tamil Nadu	39.5	44.6	5.9	5.7	2.7	1.7	100.0
+16	Non Special Category states	Uttar Pradesh	61.2	25.3	0.4	9.7	2.1	1.2	100.0
+17	Non Special Category states	Uttar Pradesh	61.2	25.3	0.4	9.7	2.1	1.2	100.0
+18	Non Special Category states	West Bengal	34.6	43.9	3.3	9.7	6.6	2.0	100.0
+19	Special Category States	Himachal Pradesh	87.4	NaN	NaN	6.7	4.7	1.2	100.0
+20	Special Category States	Uttarakhand	80.7	4.7	5.2	9.3	NaN	NaN	100.0
+21	Special Category States	Uttarakhand	80.7	4.7	5.2	9.3	NaN	NaN	100.0
+22	NaN	NaN	NaN	NaN	NaN	NaN	NaN	NaN	NaN
+23	All India	All India	68.1	16.6	2.0	8.5	3.4	1.5	100.0
+24	Non Special Category states	Andhra Pradesh	69.0	9.7	4.0	8.0	7.1	2.0	100.0
+25	Non Special Category states*	Biha r*	71.8	11.2	0.0	15.5	1.1	0.5	100.0
+
+31)
+df_null.isnull().sum().sum()
+
+22
+
+32)
+df_null.fillna(1)
+
+Category of States	States	Agriculture	Manufacturing	Construction	Trade Hotels & Restaurants	Community, Social and Personal Services	Others	Total
+0	Non Special Category states	Andhra Pradesh	69.0	9.7	3.2	9.0	7.1	2.0	100.0
+1	Non Special Category states	Assam	69.3	8.4	1.8	7.8	11.0	1.8	100.0
+2	Non Special Category states	Bihar	71.8	11.2	0.0	15.5	1.1	0.5	100.0
+3	Non Special Category states	Chhattisgarh	87.9	2.4	0.9	7.2	1.7	1.0	100.0
+4	Non Special Category states	Delhi	1.0	11.1	1.0	57.8	31.1	1.0	100.0
+5	Non Special Category states	Gujarat	76.7	2.6	0.3	17.8	1.5	1.2	100.0
+6	Non Special Category states	Haryana	65.6	3.8	7.0	8.1	15.5	1.0	100.0
+7	Non Special Category states	Jharkhand	65.3	14.6	4.3	12.1	2.8	0.9	100.0
+8	Non Special Category states	Karnataka	82.6	9.3	1.2	5.7	0.3	0.9	100.0
+9	Non Special Category states	Kerala	19.2	32.8	1.0	32.0	16.1	1.0	100.0
+10	Non Special Category states	Madhya Pradesh	82.9	9. 9	1.5	4.3	1.3	0.0	100.0
+11	Non Special Category states	Maharashtra	82.6	5.3	1.9	5.8	4.1	0.3	100.0
+12	Non Special Category states	Orissa	73.2	17.4	3.3	3.3	1.1	1.8	100.0
+13	Non Special Category states	Punjab	67.9	12.7	1.2	7.2	8.4	2.6	100.0
+14	Non Special Category states	Rajasthan	75.8	9.6	2.9	7.3	0.4	4.0	100.0
+15	Non Special Category states	Tamil Nadu	39.5	44.6	5.9	5.7	2.7	1.7	100.0
+16	Non Special Category states	Uttar Pradesh	61.2	25.3	0.4	9.7	2.1	1.2	100.0
+17	Non Special Category states	Uttar Pradesh	61.2	25.3	0.4	9.7	2.1	1.2	100.0
+18	Non Special Category states	West Bengal	34.6	43.9	3.3	9.7	6.6	2.0	100.0
+19	Special Category States	Himachal Pradesh	87.4	1	1.0	6.7	4.7	1.2	100.0
+20	Special Category States	Uttarakhand	80.7	4.7	5.2	9.3	1.0	1.0	100.0
+21	Special Category States	Uttarakhand	80.7	4.7	5.2	9.3	1.0	1.0	100.0
+22	1	1	1.0	1	1.0	1.0	1.0	1.0	1.0
+23	All India	All India	68.1	16.6	2.0	8.5	3.4	1.5	100.0
+24	Non Special Category states	Andhra Pradesh	69.0	9.7	4.0	8.0	7.1	2.0	100.0
+25	Non Special Category states*	Biha r*	71.8	11.2	0.0	15.5	1.1	0.5	100.0
+
+33)
+df_null.isnull().sum().sum()
+
+22
+
+34)
+df_null
+
+Category of States	States	Agriculture	Manufacturing	Construction	Trade Hotels & Restaurants	Community, Social and Personal Services	Others	Total
+0	Non Special Category states	Andhra Pradesh	69.0	9.7	3.2	9.0	7.1	2.0	100.0
+1	Non Special Category states	Assam	69.3	8.4	1.8	7.8	11.0	1.8	100.0
+2	Non Special Category states	Bihar	71.8	11.2	0.0	15.5	1.1	0.5	100.0
+3	Non Special Category states	Chhattisgarh	87.9	2.4	0.9	7.2	1.7	NaN	100.0
+4	Non Special Category states	Delhi	NaN	11.1	NaN	57.8	31.1	NaN	100.0
+5	Non Special Category states	Gujarat	76.7	2.6	0.3	17.8	1.5	1.2	100.0
+6	Non Special Category states	Haryana	65.6	3.8	7.0	8.1	15.5	NaN	100.0
+7	Non Special Category states	Jharkhand	65.3	14.6	4.3	12.1	2.8	0.9	100.0
+8	Non Special Category states	Karnataka	82.6	9.3	1.2	5.7	0.3	0.9	100.0
+9	Non Special Category states	Kerala	19.2	32.8	NaN	32.0	16.1	NaN	100.0
+10	Non Special Category states	Madhya Pradesh	82.9	9. 9	1.5	4.3	1.3	0.0	100.0
+11	Non Special Category states	Maharashtra	82.6	5.3	1.9	5.8	4.1	0.3	100.0
+12	Non Special Category states	Orissa	73.2	17.4	3.3	3.3	1.1	1.8	100.0
+13	Non Special Category states	Punjab	67.9	12.7	1.2	7.2	8.4	2.6	100.0
+14	Non Special Category states	Rajasthan	75.8	9.6	2.9	7.3	0.4	4.0	100.0
+15	Non Special Category states	Tamil Nadu	39.5	44.6	5.9	5.7	2.7	1.7	100.0
+16	Non Special Category states	Uttar Pradesh	61.2	25.3	0.4	9.7	2.1	1.2	100.0
+17	Non Special Category states	Uttar Pradesh	61.2	25.3	0.4	9.7	2.1	1.2	100.0
+18	Non Special Category states	West Bengal	34.6	43.9	3.3	9.7	6.6	2.0	100.0
+19	Special Category States	Himachal Pradesh	87.4	NaN	NaN	6.7	4.7	1.2	100.0
+20	Special Category States	Uttarakhand	80.7	4.7	5.2	9.3	NaN	NaN	100.0
+21	Special Category States	Uttarakhand	80.7	4.7	5.2	9.3	NaN	NaN	100.0
+22	NaN	NaN	NaN	NaN	NaN	NaN	NaN	NaN	NaN
+23	All India	All India	68.1	16.6	2.0	8.5	3.4	1.5	100.0
+24	Non Special Category states	Andhra Pradesh	69.0	9.7	4.0	8.0	7.1	2.0	100.0
+25	Non Special Category states*	Biha r*	71.8	11.2	0.0	15.5	1.1	0.5	100.0
+
+35)
+df2=df_null.fillna(1)
+df2
+
+Category of States	States	Agriculture	Manufacturing	Construction	Trade Hotels & Restaurants	Community, Social and Personal Services	Others	Total
+0	Non Special Category states	Andhra Pradesh	69.0	9.7	3.2	9.0	7.1	2.0	100.0
+1	Non Special Category states	Assam	69.3	8.4	1.8	7.8	11.0	1.8	100.0
+2	Non Special Category states	Bihar	71.8	11.2	0.0	15.5	1.1	0.5	100.0
+3	Non Special Category states	Chhattisgarh	87.9	2.4	0.9	7.2	1.7	1.0	100.0
+4	Non Special Category states	Delhi	1.0	11.1	1.0	57.8	31.1	1.0	100.0
+5	Non Special Category states	Gujarat	76.7	2.6	0.3	17.8	1.5	1.2	100.0
+6	Non Special Category states	Haryana	65.6	3.8	7.0	8.1	15.5	1.0	100.0
+7	Non Special Category states	Jharkhand	65.3	14.6	4.3	12.1	2.8	0.9	100.0
+8	Non Special Category states	Karnataka	82.6	9.3	1.2	5.7	0.3	0.9	100.0
+9	Non Special Category states	Kerala	19.2	32.8	1.0	32.0	16.1	1.0	100.0
+10	Non Special Category states	Madhya Pradesh	82.9	9. 9	1.5	4.3	1.3	0.0	100.0
+11	Non Special Category states	Maharashtra	82.6	5.3	1.9	5.8	4.1	0.3	100.0
+12	Non Special Category states	Orissa	73.2	17.4	3.3	3.3	1.1	1.8	100.0
+13	Non Special Category states	Punjab	67.9	12.7	1.2	7.2	8.4	2.6	100.0
+14	Non Special Category states	Rajasthan	75.8	9.6	2.9	7.3	0.4	4.0	100.0
+15	Non Special Category states	Tamil Nadu	39.5	44.6	5.9	5.7	2.7	1.7	100.0
+16	Non Special Category states	Uttar Pradesh	61.2	25.3	0.4	9.7	2.1	1.2	100.0
+17	Non Special Category states	Uttar Pradesh	61.2	25.3	0.4	9.7	2.1	1.2	100.0
+18	Non Special Category states	West Bengal	34.6	43.9	3.3	9.7	6.6	2.0	100.0
+19	Special Category States	Himachal Pradesh	87.4	1	1.0	6.7	4.7	1.2	100.0
+20	Special Category States	Uttarakhand	80.7	4.7	5.2	9.3	1.0	1.0	100.0
+21	Special Category States	Uttarakhand	80.7	4.7	5.2	9.3	1.0	1.0	100.0
+22	1	1	1.0	1	1.0	1.0	1.0	1.0	1.0
+23	All India	All India	68.1	16.6	2.0	8.5	3.4	1.5	100.0
+24	Non Special Category states	Andhra Pradesh	69.0	9.7	4.0	8.0	7.1	2.0	100.0
+25	Non Special Category states*	Biha r*	71.8	11.2	0.0	15.5	1.1	0.5	100.0
+
+36)
+df2.isnull().sum().sum()
+
+0
+
+37)
+df_null
+
+Category of States	States	Agriculture	Manufacturing	Construction	Trade Hotels & Restaurants	Community, Social and Personal Services	Others	Total
+0	Non Special Category states	Andhra Pradesh	69.0	9.7	3.2	9.0	7.1	2.0	100.0
+1	Non Special Category states	Assam	69.3	8.4	1.8	7.8	11.0	1.8	100.0
+2	Non Special Category states	Bihar	71.8	11.2	0.0	15.5	1.1	0.5	100.0
+3	Non Special Category states	Chhattisgarh	87.9	2.4	0.9	7.2	1.7	NaN	100.0
+4	Non Special Category states	Delhi	NaN	11.1	NaN	57.8	31.1	NaN	100.0
+5	Non Special Category states	Gujarat	76.7	2.6	0.3	17.8	1.5	1.2	100.0
+6	Non Special Category states	Haryana	65.6	3.8	7.0	8.1	15.5	NaN	100.0
+7	Non Special Category states	Jharkhand	65.3	14.6	4.3	12.1	2.8	0.9	100.0
+8	Non Special Category states	Karnataka	82.6	9.3	1.2	5.7	0.3	0.9	100.0
+9	Non Special Category states	Kerala	19.2	32.8	NaN	32.0	16.1	NaN	100.0
+10	Non Special Category states	Madhya Pradesh	82.9	9. 9	1.5	4.3	1.3	0.0	100.0
+11	Non Special Category states	Maharashtra	82.6	5.3	1.9	5.8	4.1	0.3	100.0
+12	Non Special Category states	Orissa	73.2	17.4	3.3	3.3	1.1	1.8	100.0
+13	Non Special Category states	Punjab	67.9	12.7	1.2	7.2	8.4	2.6	100.0
+14	Non Special Category states	Rajasthan	75.8	9.6	2.9	7.3	0.4	4.0	100.0
+15	Non Special Category states	Tamil Nadu	39.5	44.6	5.9	5.7	2.7	1.7	100.0
+16	Non Special Category states	Uttar Pradesh	61.2	25.3	0.4	9.7	2.1	1.2	100.0
+17	Non Special Category states	Uttar Pradesh	61.2	25.3	0.4	9.7	2.1	1.2	100.0
+18	Non Special Category states	West Bengal	34.6	43.9	3.3	9.7	6.6	2.0	100.0
+19	Special Category States	Himachal Pradesh	87.4	NaN	NaN	6.7	4.7	1.2	100.0
+20	Special Category States	Uttarakhand	80.7	4.7	5.2	9.3	NaN	NaN	100.0
+21	Special Category States	Uttarakhand	80.7	4.7	5.2	9.3	NaN	NaN	100.0
+22	NaN	NaN	NaN	NaN	NaN	NaN	NaN	NaN	NaN
+23	All India	All India	68.1	16.6	2.0	8.5	3.4	1.5	100.0
+24	Non Special Category states	Andhra Pradesh	69.0	9.7	4.0	8.0	7.1	2.0	100.0
+25	Non Special Category states*	Biha r*	71.8	11.2	0.0	15.5	1.1	0.5	100.0
+
+38)
+df_null.fillna({'Agriculture':0,'Construction':1})
+
+Category of States	States	Agriculture	Manufacturing	Construction	Trade Hotels & Restaurants	Community, Social and Personal Services	Others	Total
+0	Non Special Category states	Andhra Pradesh	69.0	9.7	3.2	9.0	7.1	2.0	100.0
+1	Non Special Category states	Assam	69.3	8.4	1.8	7.8	11.0	1.8	100.0
+2	Non Special Category states	Bihar	71.8	11.2	0.0	15.5	1.1	0.5	100.0
+3	Non Special Category states	Chhattisgarh	87.9	2.4	0.9	7.2	1.7	NaN	100.0
+4	Non Special Category states	Delhi	0.0	11.1	1.0	57.8	31.1	NaN	100.0
+5	Non Special Category states	Gujarat	76.7	2.6	0.3	17.8	1.5	1.2	100.0
+6	Non Special Category states	Haryana	65.6	3.8	7.0	8.1	15.5	NaN	100.0
+7	Non Special Category states	Jharkhand	65.3	14.6	4.3	12.1	2.8	0.9	100.0
+8	Non Special Category states	Karnataka	82.6	9.3	1.2	5.7	0.3	0.9	100.0
+9	Non Special Category states	Kerala	19.2	32.8	1.0	32.0	16.1	NaN	100.0
+10	Non Special Category states	Madhya Pradesh	82.9	9. 9	1.5	4.3	1.3	0.0	100.0
+11	Non Special Category states	Maharashtra	82.6	5.3	1.9	5.8	4.1	0.3	100.0
+12	Non Special Category states	Orissa	73.2	17.4	3.3	3.3	1.1	1.8	100.0
+13	Non Special Category states	Punjab	67.9	12.7	1.2	7.2	8.4	2.6	100.0
+14	Non Special Category states	Rajasthan	75.8	9.6	2.9	7.3	0.4	4.0	100.0
+15	Non Special Category states	Tamil Nadu	39.5	44.6	5.9	5.7	2.7	1.7	100.0
+16	Non Special Category states	Uttar Pradesh	61.2	25.3	0.4	9.7	2.1	1.2	100.0
+17	Non Special Category states	Uttar Pradesh	61.2	25.3	0.4	9.7	2.1	1.2	100.0
+18	Non Special Category states	West Bengal	34.6	43.9	3.3	9.7	6.6	2.0	100.0
+19	Special Category States	Himachal Pradesh	87.4	NaN	1.0	6.7	4.7	1.2	100.0
+20	Special Category States	Uttarakhand	80.7	4.7	5.2	9.3	NaN	NaN	100.0
+21	Special Category States	Uttarakhand	80.7	4.7	5.2	9.3	NaN	NaN	100.0
+22	NaN	NaN	0.0	NaN	1.0	NaN	NaN	NaN	NaN
+23	All India	All India	68.1	16.6	2.0	8.5	3.4	1.5	100.0
+24	Non Special Category states	Andhra Pradesh	69.0	9.7	4.0	8.0	7.1	2.0	100.0
+25	Non Special Category states*	Biha r*	71.8	11.2	0.0	15.5	1.1	0.5	100.0
+
+39)
+df_null.isnull().sum()
+
+Category of States                         1
+States                                     1
+Agriculture                                2
+Manufacturing                              2
+Construction                               4
+Trade Hotels & Restaurants                 1
+Community, Social and Personal Services    3
+Others                                     7
+Total                                      1
+dtype: int64
+
+40)
+df_null_update=df_null.fillna({'Agriculture':0,'Construction':1})
+df_null_update
+
+Category of States	States	Agriculture	Manufacturing	Construction	Trade Hotels & Restaurants	Community, Social and Personal Services	Others	Total
+0	Non Special Category states	Andhra Pradesh	69.0	9.7	3.2	9.0	7.1	2.0	100.0
+1	Non Special Category states	Assam	69.3	8.4	1.8	7.8	11.0	1.8	100.0
+2	Non Special Category states	Bihar	71.8	11.2	0.0	15.5	1.1	0.5	100.0
+3	Non Special Category states	Chhattisgarh	87.9	2.4	0.9	7.2	1.7	NaN	100.0
+4	Non Special Category states	Delhi	0.0	11.1	1.0	57.8	31.1	NaN	100.0
+5	Non Special Category states	Gujarat	76.7	2.6	0.3	17.8	1.5	1.2	100.0
+6	Non Special Category states	Haryana	65.6	3.8	7.0	8.1	15.5	NaN	100.0
+7	Non Special Category states	Jharkhand	65.3	14.6	4.3	12.1	2.8	0.9	100.0
+8	Non Special Category states	Karnataka	82.6	9.3	1.2	5.7	0.3	0.9	100.0
+9	Non Special Category states	Kerala	19.2	32.8	1.0	32.0	16.1	NaN	100.0
+10	Non Special Category states	Madhya Pradesh	82.9	9. 9	1.5	4.3	1.3	0.0	100.0
+11	Non Special Category states	Maharashtra	82.6	5.3	1.9	5.8	4.1	0.3	100.0
+12	Non Special Category states	Orissa	73.2	17.4	3.3	3.3	1.1	1.8	100.0
+13	Non Special Category states	Punjab	67.9	12.7	1.2	7.2	8.4	2.6	100.0
+14	Non Special Category states	Rajasthan	75.8	9.6	2.9	7.3	0.4	4.0	100.0
+15	Non Special Category states	Tamil Nadu	39.5	44.6	5.9	5.7	2.7	1.7	100.0
+16	Non Special Category states	Uttar Pradesh	61.2	25.3	0.4	9.7	2.1	1.2	100.0
+17	Non Special Category states	Uttar Pradesh	61.2	25.3	0.4	9.7	2.1	1.2	100.0
+18	Non Special Category states	West Bengal	34.6	43.9	3.3	9.7	6.6	2.0	100.0
+19	Special Category States	Himachal Pradesh	87.4	NaN	1.0	6.7	4.7	1.2	100.0
+20	Special Category States	Uttarakhand	80.7	4.7	5.2	9.3	NaN	NaN	100.0
+21	Special Category States	Uttarakhand	80.7	4.7	5.2	9.3	NaN	NaN	100.0
+22	NaN	NaN	0.0	NaN	1.0	NaN	NaN	NaN	NaN
+23	All India	All India	68.1	16.6	2.0	8.5	3.4	1.5	100.0
+24	Non Special Category states	Andhra Pradesh	69.0	9.7	4.0	8.0	7.1	2.0	100.0
+25	Non Special Category states*	Biha r*	71.8	11.2	0.0	15.5	1.1	0.5	100.0
+
+41)
+df_null_update.isnull().sum()
+
+Category of States                         1
+States                                     1
+Agriculture                                0
+Manufacturing                              2
+Construction                               0
+Trade Hotels & Restaurants                 1
+Community, Social and Personal Services    3
+Others                                     7
+Total                                      1
+dtype: int64
+ 42)
+df_null
+
+Category of States	States	Agriculture	Manufacturing	Construction	Trade Hotels & Restaurants	Community, Social and Personal Services	Others	Total
+0	Non Special Category states	Andhra Pradesh	69.0	9.7	3.2	9.0	7.1	2.0	100.0
+1	Non Special Category states	Assam	69.3	8.4	1.8	7.8	11.0	1.8	100.0
+2	Non Special Category states	Bihar	71.8	11.2	0.0	15.5	1.1	0.5	100.0
+3	Non Special Category states	Chhattisgarh	87.9	2.4	0.9	7.2	1.7	NaN	100.0
+4	Non Special Category states	Delhi	NaN	11.1	NaN	57.8	31.1	NaN	100.0
+5	Non Special Category states	Gujarat	76.7	2.6	0.3	17.8	1.5	1.2	100.0
+6	Non Special Category states	Haryana	65.6	3.8	7.0	8.1	15.5	NaN	100.0
+7	Non Special Category states	Jharkhand	65.3	14.6	4.3	12.1	2.8	0.9	100.0
+8	Non Special Category states	Karnataka	82.6	9.3	1.2	5.7	0.3	0.9	100.0
+9	Non Special Category states	Kerala	19.2	32.8	NaN	32.0	16.1	NaN	100.0
+10	Non Special Category states	Madhya Pradesh	82.9	9. 9	1.5	4.3	1.3	0.0	100.0
+11	Non Special Category states	Maharashtra	82.6	5.3	1.9	5.8	4.1	0.3	100.0
+12	Non Special Category states	Orissa	73.2	17.4	3.3	3.3	1.1	1.8	100.0
+13	Non Special Category states	Punjab	67.9	12.7	1.2	7.2	8.4	2.6	100.0
+14	Non Special Category states	Rajasthan	75.8	9.6	2.9	7.3	0.4	4.0	100.0
+15	Non Special Category states	Tamil Nadu	39.5	44.6	5.9	5.7	2.7	1.7	100.0
+16	Non Special Category states	Uttar Pradesh	61.2	25.3	0.4	9.7	2.1	1.2	100.0
+17	Non Special Category states	Uttar Pradesh	61.2	25.3	0.4	9.7	2.1	1.2	100.0
+18	Non Special Category states	West Bengal	34.6	43.9	3.3	9.7	6.6	2.0	100.0
+19	Special Category States	Himachal Pradesh	87.4	NaN	NaN	6.7	4.7	1.2	100.0
+20	Special Category States	Uttarakhand	80.7	4.7	5.2	9.3	NaN	NaN	100.0
+21	Special Category States	Uttarakhand	80.7	4.7	5.2	9.3	NaN	NaN	100.0
+22	NaN	NaN	NaN	NaN	NaN	NaN	NaN	NaN	NaN
+23	All India	All India	68.1	16.6	2.0	8.5	3.4	1.5	100.0
+24	Non Special Category states	Andhra Pradesh	69.0	9.7	4.0	8.0	7.1	2.0	100.0
+25	Non Special Category states*	Biha r*	71.8	11.2	0.0	15.5	1.1	0.5	100.0
+
+43)
+df_null.fillna({'Agriculture':0,'Construction':1},inplace=True)
+df_null
+
+Category of States	States	Agriculture	Manufacturing	Construction	Trade Hotels & Restaurants	Community, Social and Personal Services	Others	Total
+0	Non Special Category states	Andhra Pradesh	69.0	9.7	3.2	9.0	7.1	2.0	100.0
+1	Non Special Category states	Assam	69.3	8.4	1.8	7.8	11.0	1.8	100.0
+2	Non Special Category states	Bihar	71.8	11.2	0.0	15.5	1.1	0.5	100.0
+3	Non Special Category states	Chhattisgarh	87.9	2.4	0.9	7.2	1.7	NaN	100.0
+4	Non Special Category states	Delhi	0.0	11.1	1.0	57.8	31.1	NaN	100.0
+5	Non Special Category states	Gujarat	76.7	2.6	0.3	17.8	1.5	1.2	100.0
+6	Non Special Category states	Haryana	65.6	3.8	7.0	8.1	15.5	NaN	100.0
+7	Non Special Category states	Jharkhand	65.3	14.6	4.3	12.1	2.8	0.9	100.0
+8	Non Special Category states	Karnataka	82.6	9.3	1.2	5.7	0.3	0.9	100.0
+9	Non Special Category states	Kerala	19.2	32.8	1.0	32.0	16.1	NaN	100.0
+10	Non Special Category states	Madhya Pradesh	82.9	9. 9	1.5	4.3	1.3	0.0	100.0
+11	Non Special Category states	Maharashtra	82.6	5.3	1.9	5.8	4.1	0.3	100.0
+12	Non Special Category states	Orissa	73.2	17.4	3.3	3.3	1.1	1.8	100.0
+13	Non Special Category states	Punjab	67.9	12.7	1.2	7.2	8.4	2.6	100.0
+14	Non Special Category states	Rajasthan	75.8	9.6	2.9	7.3	0.4	4.0	100.0
+15	Non Special Category states	Tamil Nadu	39.5	44.6	5.9	5.7	2.7	1.7	100.0
+16	Non Special Category states	Uttar Pradesh	61.2	25.3	0.4	9.7	2.1	1.2	100.0
+17	Non Special Category states	Uttar Pradesh	61.2	25.3	0.4	9.7	2.1	1.2	100.0
+18	Non Special Category states	West Bengal	34.6	43.9	3.3	9.7	6.6	2.0	100.0
+19	Special Category States	Himachal Pradesh	87.4	NaN	1.0	6.7	4.7	1.2	100.0
+20	Special Category States	Uttarakhand	80.7	4.7	5.2	9.3	NaN	NaN	100.0
+21	Special Category States	Uttarakhand	80.7	4.7	5.2	9.3	NaN	NaN	100.0
+22	NaN	NaN	0.0	NaN	1.0	NaN	NaN	NaN	NaN
+23	All India	All India	68.1	16.6	2.0	8.5	3.4	1.5	100.0
+24	Non Special Category states	Andhra Pradesh	69.0	9.7	4.0	8.0	7.1	2.0	100.0
+25	Non Special Category states*	Biha r*	71.8	11.2	0.0	15.5	1.1	0.5	100.0
+
+44)
+df_null.isnull().sum()
+
+Category of States                         1
+States                                     1
+Agriculture                                0
+Manufacturing                              2
+Construction                               0
+Trade Hotels & Restaurants                 1
+Community, Social and Personal Services    3
+Others                                     7
+Total                                      1
+dtype: int64
+
+45)
+df_null.dropna(how='any')
+
+Category of States	States	Agriculture	Manufacturing	Construction	Trade Hotels & Restaurants	Community, Social and Personal Services	Others	Total
+0	Non Special Category states	Andhra Pradesh	69.0	9.7	3.2	9.0	7.1	2.0	100.0
+1	Non Special Category states	Assam	69.3	8.4	1.8	7.8	11.0	1.8	100.0
+2	Non Special Category states	Bihar	71.8	11.2	0.0	15.5	1.1	0.5	100.0
+5	Non Special Category states	Gujarat	76.7	2.6	0.3	17.8	1.5	1.2	100.0
+7	Non Special Category states	Jharkhand	65.3	14.6	4.3	12.1	2.8	0.9	100.0
+8	Non Special Category states	Karnataka	82.6	9.3	1.2	5.7	0.3	0.9	100.0
+10	Non Special Category states	Madhya Pradesh	82.9	9. 9	1.5	4.3	1.3	0.0	100.0
+11	Non Special Category states	Maharashtra	82.6	5.3	1.9	5.8	4.1	0.3	100.0
+12	Non Special Category states	Orissa	73.2	17.4	3.3	3.3	1.1	1.8	100.0
+13	Non Special Category states	Punjab	67.9	12.7	1.2	7.2	8.4	2.6	100.0
+14	Non Special Category states	Rajasthan	75.8	9.6	2.9	7.3	0.4	4.0	100.0
+15	Non Special Category states	Tamil Nadu	39.5	44.6	5.9	5.7	2.7	1.7	100.0
+16	Non Special Category states	Uttar Pradesh	61.2	25.3	0.4	9.7	2.1	1.2	100.0
+17	Non Special Category states	Uttar Pradesh	61.2	25.3	0.4	9.7	2.1	1.2	100.0
+18	Non Special Category states	West Bengal	34.6	43.9	3.3	9.7	6.6	2.0	100.0
+23	All India	All India	68.1	16.6	2.0	8.5	3.4	1.5	100.0
+24	Non Special Category states	Andhra Pradesh	69.0	9.7	4.0	8.0	7.1	2.0	100.0
+25	Non Special Category states*	Biha r*	71.8	11.2	0.0	15.5	1.1	0.5	100.0
+
+46)
+df_null.isnull().sum()
+
+Category of States                         1
+States                                     1
+Agriculture                                0
+Manufacturing                              2
+Construction                               0
+Trade Hotels & Restaurants                 1
+Community, Social and Personal Services    3
+Others                                     7
+Total                                      1
+dtype: int64
+
+47)
+df_null_delete=df_null.dropna(how='any')
+df_null_delete
+
+Category of States	States	Agriculture	Manufacturing	Construction	Trade Hotels & Restaurants	Community, Social and Personal Services	Others	Total
+0	Non Special Category states	Andhra Pradesh	69.0	9.7	3.2	9.0	7.1	2.0	100.0
+1	Non Special Category states	Assam	69.3	8.4	1.8	7.8	11.0	1.8	100.0
+2	Non Special Category states	Bihar	71.8	11.2	0.0	15.5	1.1	0.5	100.0
+5	Non Special Category states	Gujarat	76.7	2.6	0.3	17.8	1.5	1.2	100.0
+7	Non Special Category states	Jharkhand	65.3	14.6	4.3	12.1	2.8	0.9	100.0
+8	Non Special Category states	Karnataka	82.6	9.3	1.2	5.7	0.3	0.9	100.0
+10	Non Special Category states	Madhya Pradesh	82.9	9. 9	1.5	4.3	1.3	0.0	100.0
+11	Non Special Category states	Maharashtra	82.6	5.3	1.9	5.8	4.1	0.3	100.0
+12	Non Special Category states	Orissa	73.2	17.4	3.3	3.3	1.1	1.8	100.0
+13	Non Special Category states	Punjab	67.9	12.7	1.2	7.2	8.4	2.6	100.0
+14	Non Special Category states	Rajasthan	75.8	9.6	2.9	7.3	0.4	4.0	100.0
+15	Non Special Category states	Tamil Nadu	39.5	44.6	5.9	5.7	2.7	1.7	100.0
+16	Non Special Category states	Uttar Pradesh	61.2	25.3	0.4	9.7	2.1	1.2	100.0
+17	Non Special Category states	Uttar Pradesh	61.2	25.3	0.4	9.7	2.1	1.2	100.0
+18	Non Special Category states	West Bengal	34.6	43.9	3.3	9.7	6.6	2.0	100.0
+23	All India	All India	68.1	16.6	2.0	8.5	3.4	1.5	100.0
+24	Non Special Category states	Andhra Pradesh	69.0	9.7	4.0	8.0	7.1	2.0	100.0
+25	Non Special Category states*	Biha r*	71.8	11.2	0.0	15.5	1.1	0.5	100.0
+
+48)
+df_null_delete.isnull().sum()
+
+Category of States                         0
+States                                     0
+Agriculture                                0
+Manufacturing                              0
+Construction                               0
+Trade Hotels & Restaurants                 0
+Community, Social and Personal Services    0
+Others                                     0
+Total                                      0
+dtype: int64
+
+49)
+df_sp=pd.read_csv(r'C:\Users\Admin\Desktop\CMRIT\DW&DV\Third_Program\Child Labour in India special.csv')
+df_sp
+
+Category of States	States	Agriculture	Manufacturing	Construction	Trade Hotels & Restaurants	Community, Social and Personal Services	Others	Total
+0	Non Special Category states	Andhra Pradesh	69	9.7	3.2	9	7.1	2	100
+1	Non Special Category states	Assam	69.3	8.4	1.8	7.8	11	1.8	100
+2	Non Special Category states	Bihar	71.8	11.2	0	15.5	1.1	0.5	100
+3	Non Special Category states	Chhattisgarh	87.9	2.4	0.9	7.2	1.7	NaN	100
+4	Non Special Category states	Delhi	NaN	11.1	NaN	57.8	31.1	NaN	100
+5	Non Special Category states	Gujarat	76.7	2.6	0.3	17.8	1.5	1.2	100
+6	Non Special Category states	Haryana	65.6	3.8	7	8.1	15.5	NaN	100
+7	Non Special Category states	Jharkhand	65.3	14.6	4.3	12.1	2.8	0.9	100
+8	Non Special Category states	Karnataka	82.6	9.3	1.2	5.7	0.3	0.9	100
+9	Non Special Category states	Kerala	19.2	32.8	NaN	32	16.1	NaN	100
+10	Non Special Category states	Madhya Pradesh	82.9	9. 9	1.5	4.3	1.3	0	100
+11	Non Special Category states	Maharashtra	82.6	5.3	1.9	5.8	4.1	0.3	100
+12	Non Special Category states	Orissa	73.2	17.4	3.3	3.3	1.1	1.8	100
+13	Non Special Category states	Punjab	67.9	12.7	1.2	7.2	8.4	2.6	100
+14	Non Special Category states	Rajasthan	75.8	9.6	2.9	7.3	0.4	4	100
+15	Non Special Category states	Tamil Nadu	39.5	44.6	5.9	5.7	2.7	1.7	100
+16	Non Special Category states	Uttar Pradesh	61.2	25.3	0.4	9.7	2.1	1.2	100
+17	Non Special Category states	Uttar Pradesh	61.2	25.3	0.4	9.7	2.1	1.2	100
+18	Non Special Category states	West Bengal	34.6	43.9	3.3	9.7	6.6	2	100
+19	Special Category States	Himachal Pradesh	87.4	NaN	NaN	6.7	4.7	1.2	100
+20	Special Category States	Uttarakhand	80.7	4.7	5.2	9.3	NaN	NaN	100
+21	\n	\n	\n	\n	\n	\n	\n	\n	\n
+22	Special Category States	Uttarakhand	80.7	4.7	5.2	9.3	NaN	NaN	100
+23	NaN	NaN	NaN	NaN	NaN	NaN	NaN	NaN	NaN
+24	All India	All India	68.1	16.6	2	8.5	3.4	1.5	100
+25	Non Special Category states	Andhra Pradesh	69	9.7	4	8	7.1	2	100
+26	Non Special Category states*	Biha r*	71.8	11.2	0	15.5	1.1	0.5	100
+27	""	""	""	""	""	""	""	""	""
+28	" "	" "	" "	" "	" "	" "	" "	" "	" "
+29	"\n"	"\n"	"\n"	"\n"	"\n"	"\n"	"\n"	"\n"	"\n"
+
+50)
+df_sp['Category of States']
+
+0      Non Special Category states
+1      Non Special Category states
+2      Non Special Category states
+3      Non Special Category states
+4      Non Special Category states
+5      Non Special Category states
+6      Non Special Category states
+7      Non Special Category states
+8      Non Special Category states
+9      Non Special Category states
+10     Non Special Category states
+11     Non Special Category states
+12     Non Special Category states
+13     Non Special Category states
+14     Non Special Category states
+15     Non Special Category states
+16     Non Special Category states
+17     Non Special Category states
+18     Non Special Category states
+19         Special Category States
+20         Special Category States
+21                              \n
+22         Special Category States
+23                             NaN
+24                       All India
+25     Non Special Category states
+26    Non Special Category states*
+27                              ""
+28                             " "
+29                            "\n"
+Name: Category of States, dtype: object
+
+51)
+category_of_states=df_sp['Category of States'].replace(r'\W','',regex=True)
+category_of_states
+
+0     NonSpecialCategorystates
+1     NonSpecialCategorystates
+2     NonSpecialCategorystates
+3     NonSpecialCategorystates
+4     NonSpecialCategorystates
+5     NonSpecialCategorystates
+6     NonSpecialCategorystates
+7     NonSpecialCategorystates
+8     NonSpecialCategorystates
+9     NonSpecialCategorystates
+10    NonSpecialCategorystates
+11    NonSpecialCategorystates
+12    NonSpecialCategorystates
+13    NonSpecialCategorystates
+14    NonSpecialCategorystates
+15    NonSpecialCategorystates
+16    NonSpecialCategorystates
+17    NonSpecialCategorystates
+18    NonSpecialCategorystates
+19       SpecialCategoryStates
+20       SpecialCategoryStates
+21                           n
+22       SpecialCategoryStates
+23                         NaN
+24                    AllIndia
+25    NonSpecialCategorystates
+26    NonSpecialCategorystates
+27                            
+28                            
+29                           n
+Name: Category of States, dtype: object
+
+52)
+df_sp['States']
+
+0       Andhra Pradesh
+1                Assam
+2                Bihar
+3         Chhattisgarh
+4                Delhi
+5              Gujarat
+6              Haryana
+7            Jharkhand
+8            Karnataka
+9               Kerala
+10      Madhya Pradesh
+11         Maharashtra
+12              Orissa
+13              Punjab
+14           Rajasthan
+15          Tamil Nadu
+16       Uttar Pradesh
+17       Uttar Pradesh
+18         West Bengal
+19    Himachal Pradesh
+20         Uttarakhand
+21                  \n
+22         Uttarakhand
+23                 NaN
+24           All India
+25      Andhra Pradesh
+26        Biha      r*
+27                  ""
+28                 " "
+29                "\n"
+Name: States, dtype: object
+
+53)
+states=df_sp['States'].replace(r'\W','',regex=True)
+states
+
+0       AndhraPradesh
+1               Assam
+2               Bihar
+3        Chhattisgarh
+4               Delhi
+5             Gujarat
+6             Haryana
+7           Jharkhand
+8           Karnataka
+9              Kerala
+10      MadhyaPradesh
+11        Maharashtra
+12             Orissa
+13             Punjab
+14          Rajasthan
+15          TamilNadu
+16       UttarPradesh
+17       UttarPradesh
+18         WestBengal
+19    HimachalPradesh
+20        Uttarakhand
+21                  n
+22        Uttarakhand
+23                NaN
+24           AllIndia
+25      AndhraPradesh
+26              Bihar
+27                   
+28                   
+29                  n
+Name: States, dtype: object
+
+54)
+states=[states for states in df['States'] if states.strip()]
+states
+
+['Andhra Pradesh',
+ 'Assam',
+ 'Bihar',
+ 'Chhattisgarh',
+ 'Delhi',
+ 'Gujarat',
+ 'Haryana',
+ 'Jharkhand',
+ 'Karnataka',
+ 'Kerala',
+ 'Madhya Pradesh',
+ 'Maharashtra',
+ 'Orissa',
+ 'Punjab',
+ 'Rajasthan',
+ 'Tamil Nadu',
+ 'Uttar Pradesh',
+ 'Uttar Pradesh',
+ 'West Bengal',
+ 'Himachal Pradesh',
+ 'Uttarakhand',
+ 'Uttarakhand',
+ 'All India',
+ 'Andhra Pradesh',
+ 'Biha      r*']
+55)
+print('The total no of rows {}''\n''The total no of columns {}'.format(df.shape[0],df.shape[1]))
+The total no of rows 25
+The total no of columns 9
+56)
+df.drop('Category of States',axis=1)
+
+States	Agriculture	Manufacturing	Construction	Trade Hotels & Restaurants	Community, Social and Personal Services	Others	Total
+0	Andhra Pradesh	69.0	9.7	3.2	9.0	7.1	2.0	100
+1	Assam	69.3	8.4	1.8	7.8	11.0	1.8	100
+2	Bihar	71.8	11.2	0.0	15.5	1.1	0.5	100
+3	Chhattisgarh	87.9	2.4	0.9	7.2	1.7	NaN	100
+4	Delhi	NaN	11.1	NaN	57.8	31.1	NaN	100
+5	Gujarat	76.7	2.6	0.3	17.8	1.5	1.2	100
+6	Haryana	65.6	3.8	7.0	8.1	15.5	NaN	100
+7	Jharkhand	65.3	14.6	4.3	12.1	2.8	0.9	100
+8	Karnataka	82.6	9.3	1.2	5.7	0.3	0.9	100
+9	Kerala	19.2	32.8	NaN	32.0	16.1	NaN	100
+10	Madhya Pradesh	82.9	9. 9	1.5	4.3	1.3	0.0	100
+11	Maharashtra	82.6	5.3	1.9	5.8	4.1	0.3	100
+12	Orissa	73.2	17.4	3.3	3.3	1.1	1.8	100
+13	Punjab	67.9	12.7	1.2	7.2	8.4	2.6	100
+14	Rajasthan	75.8	9.6	2.9	7.3	0.4	4.0	100
+15	Tamil Nadu	39.5	44.6	5.9	5.7	2.7	1.7	100
+16	Uttar Pradesh	61.2	25.3	0.4	9.7	2.1	1.2	100
+17	Uttar Pradesh	61.2	25.3	0.4	9.7	2.1	1.2	100
+18	West Bengal	34.6	43.9	3.3	9.7	6.6	2.0	100
+19	Himachal Pradesh	87.4	NaN	NaN	6.7	4.7	1.2	100
+20	Uttarakhand	80.7	4.7	5.2	9.3	NaN	NaN	100
+21	Uttarakhand	80.7	4.7	5.2	9.3	NaN	NaN	100
+22	All India	68.1	16.6	2.0	8.5	3.4	1.5	100
+23	Andhra Pradesh	69.0	9.7	4.0	8.0	7.1	2.0	100
+24	Biha r*	71.8	11.2	0.0	15.5	1.1	0.5	100
+
+57)
+df
+
+Category of States	States	Agriculture	Manufacturing	Construction	Trade Hotels & Restaurants	Community, Social and Personal Services	Others	Total
+0	Non Special Category states	Andhra Pradesh	69.0	9.7	3.2	9.0	7.1	2.0	100
+1	Non Special Category states	Assam	69.3	8.4	1.8	7.8	11.0	1.8	100
+2	Non Special Category states	Bihar	71.8	11.2	0.0	15.5	1.1	0.5	100
+3	Non Special Category states	Chhattisgarh	87.9	2.4	0.9	7.2	1.7	NaN	100
+4	Non Special Category states	Delhi	NaN	11.1	NaN	57.8	31.1	NaN	100
+5	Non Special Category states	Gujarat	76.7	2.6	0.3	17.8	1.5	1.2	100
+6	Non Special Category states	Haryana	65.6	3.8	7.0	8.1	15.5	NaN	100
+7	Non Special Category states	Jharkhand	65.3	14.6	4.3	12.1	2.8	0.9	100
+8	Non Special Category states	Karnataka	82.6	9.3	1.2	5.7	0.3	0.9	100
+9	Non Special Category states	Kerala	19.2	32.8	NaN	32.0	16.1	NaN	100
+10	Non Special Category states	Madhya Pradesh	82.9	9. 9	1.5	4.3	1.3	0.0	100
+11	Non Special Category states	Maharashtra	82.6	5.3	1.9	5.8	4.1	0.3	100
+12	Non Special Category states	Orissa	73.2	17.4	3.3	3.3	1.1	1.8	100
+13	Non Special Category states	Punjab	67.9	12.7	1.2	7.2	8.4	2.6	100
+14	Non Special Category states	Rajasthan	75.8	9.6	2.9	7.3	0.4	4.0	100
+15	Non Special Category states	Tamil Nadu	39.5	44.6	5.9	5.7	2.7	1.7	100
+16	Non Special Category states	Uttar Pradesh	61.2	25.3	0.4	9.7	2.1	1.2	100
+17	Non Special Category states	Uttar Pradesh	61.2	25.3	0.4	9.7	2.1	1.2	100
+18	Non Special Category states	West Bengal	34.6	43.9	3.3	9.7	6.6	2.0	100
+19	Special Category States	Himachal Pradesh	87.4	NaN	NaN	6.7	4.7	1.2	100
+20	Special Category States	Uttarakhand	80.7	4.7	5.2	9.3	NaN	NaN	100
+21	Special Category States	Uttarakhand	80.7	4.7	5.2	9.3	NaN	NaN	100
+22	All India	All India	68.1	16.6	2.0	8.5	3.4	1.5	100
+23	Non Special Category states	Andhra Pradesh	69.0	9.7	4.0	8.0	7.1	2.0	100
+24	Non Special Category states*	Biha r*	71.8	11.2	0.0	15.5	1.1	0.5	100
+
+58)
+df.drop('Category of States',axis=1,inplace=True)
+df
+
+States	Agriculture	Manufacturing	Construction	Trade Hotels & Restaurants	Community, Social and Personal Services	Others	Total
+0	Andhra Pradesh	69.0	9.7	3.2	9.0	7.1	2.0	100
+1	Assam	69.3	8.4	1.8	7.8	11.0	1.8	100
+2	Bihar	71.8	11.2	0.0	15.5	1.1	0.5	100
+3	Chhattisgarh	87.9	2.4	0.9	7.2	1.7	NaN	100
+4	Delhi	NaN	11.1	NaN	57.8	31.1	NaN	100
+5	Gujarat	76.7	2.6	0.3	17.8	1.5	1.2	100
+6	Haryana	65.6	3.8	7.0	8.1	15.5	NaN	100
+7	Jharkhand	65.3	14.6	4.3	12.1	2.8	0.9	100
+8	Karnataka	82.6	9.3	1.2	5.7	0.3	0.9	100
+9	Kerala	19.2	32.8	NaN	32.0	16.1	NaN	100
+10	Madhya Pradesh	82.9	9. 9	1.5	4.3	1.3	0.0	100
+11	Maharashtra	82.6	5.3	1.9	5.8	4.1	0.3	100
+12	Orissa	73.2	17.4	3.3	3.3	1.1	1.8	100
+13	Punjab	67.9	12.7	1.2	7.2	8.4	2.6	100
+14	Rajasthan	75.8	9.6	2.9	7.3	0.4	4.0	100
+15	Tamil Nadu	39.5	44.6	5.9	5.7	2.7	1.7	100
+16	Uttar Pradesh	61.2	25.3	0.4	9.7	2.1	1.2	100
+17	Uttar Pradesh	61.2	25.3	0.4	9.7	2.1	1.2	100
+18	West Bengal	34.6	43.9	3.3	9.7	6.6	2.0	100
+19	Himachal Pradesh	87.4	NaN	NaN	6.7	4.7	1.2	100
+20	Uttarakhand	80.7	4.7	5.2	9.3	NaN	NaN	100
+21	Uttarakhand	80.7	4.7	5.2	9.3	NaN	NaN	100
+22	All India	68.1	16.6	2.0	8.5	3.4	1.5	100
+23	Andhra Pradesh	69.0	9.7	4.0	8.0	7.1	2.0	100
+24	Biha r*	71.8	11.2	0.0	15.5	1.1	0.5	100
+
+59)
+df.drop(1,axis=0)
+
+States	Agriculture	Manufacturing	Construction	Trade Hotels & Restaurants	Community, Social and Personal Services	Others	Total
+0	Andhra Pradesh	69.0	9.7	3.2	9.0	7.1	2.0	100
+2	Bihar	71.8	11.2	0.0	15.5	1.1	0.5	100
+3	Chhattisgarh	87.9	2.4	0.9	7.2	1.7	NaN	100
+4	Delhi	NaN	11.1	NaN	57.8	31.1	NaN	100
+5	Gujarat	76.7	2.6	0.3	17.8	1.5	1.2	100
+6	Haryana	65.6	3.8	7.0	8.1	15.5	NaN	100
+7	Jharkhand	65.3	14.6	4.3	12.1	2.8	0.9	100
+8	Karnataka	82.6	9.3	1.2	5.7	0.3	0.9	100
+9	Kerala	19.2	32.8	NaN	32.0	16.1	NaN	100
+10	Madhya Pradesh	82.9	9. 9	1.5	4.3	1.3	0.0	100
+11	Maharashtra	82.6	5.3	1.9	5.8	4.1	0.3	100
+12	Orissa	73.2	17.4	3.3	3.3	1.1	1.8	100
+13	Punjab	67.9	12.7	1.2	7.2	8.4	2.6	100
+14	Rajasthan	75.8	9.6	2.9	7.3	0.4	4.0	100
+15	Tamil Nadu	39.5	44.6	5.9	5.7	2.7	1.7	100
+16	Uttar Pradesh	61.2	25.3	0.4	9.7	2.1	1.2	100
+17	Uttar Pradesh	61.2	25.3	0.4	9.7	2.1	1.2	100
+18	West Bengal	34.6	43.9	3.3	9.7	6.6	2.0	100
+19	Himachal Pradesh	87.4	NaN	NaN	6.7	4.7	1.2	100
+20	Uttarakhand	80.7	4.7	5.2	9.3	NaN	NaN	100
+21	Uttarakhand	80.7	4.7	5.2	9.3	NaN	NaN	100
+22	All India	68.1	16.6	2.0	8.5	3.4	1.5	100
+23	Andhra Pradesh	69.0	9.7	4.0	8.0	7.1	2.0	100
+24	Biha r*	71.8	11.2	0.0	15.5	1.1	0.5	100
+
+60)
+df
+
+States	Agriculture	Manufacturing	Construction	Trade Hotels & Restaurants	Community, Social and Personal Services	Others	Total
+0	Andhra Pradesh	69.0	9.7	3.2	9.0	7.1	2.0	100
+1	Assam	69.3	8.4	1.8	7.8	11.0	1.8	100
+2	Bihar	71.8	11.2	0.0	15.5	1.1	0.5	100
+3	Chhattisgarh	87.9	2.4	0.9	7.2	1.7	NaN	100
+4	Delhi	NaN	11.1	NaN	57.8	31.1	NaN	100
+5	Gujarat	76.7	2.6	0.3	17.8	1.5	1.2	100
+6	Haryana	65.6	3.8	7.0	8.1	15.5	NaN	100
+7	Jharkhand	65.3	14.6	4.3	12.1	2.8	0.9	100
+8	Karnataka	82.6	9.3	1.2	5.7	0.3	0.9	100
+9	Kerala	19.2	32.8	NaN	32.0	16.1	NaN	100
+10	Madhya Pradesh	82.9	9. 9	1.5	4.3	1.3	0.0	100
+11	Maharashtra	82.6	5.3	1.9	5.8	4.1	0.3	100
+12	Orissa	73.2	17.4	3.3	3.3	1.1	1.8	100
+13	Punjab	67.9	12.7	1.2	7.2	8.4	2.6	100
+14	Rajasthan	75.8	9.6	2.9	7.3	0.4	4.0	100
+15	Tamil Nadu	39.5	44.6	5.9	5.7	2.7	1.7	100
+16	Uttar Pradesh	61.2	25.3	0.4	9.7	2.1	1.2	100
+17	Uttar Pradesh	61.2	25.3	0.4	9.7	2.1	1.2	100
+18	West Bengal	34.6	43.9	3.3	9.7	6.6	2.0	100
+19	Himachal Pradesh	87.4	NaN	NaN	6.7	4.7	1.2	100
+20	Uttarakhand	80.7	4.7	5.2	9.3	NaN	NaN	100
+21	Uttarakhand	80.7	4.7	5.2	9.3	NaN	NaN	100
+22	All India	68.1	16.6	2.0	8.5	3.4	1.5	100
+23	Andhra Pradesh	69.0	9.7	4.0	8.0	7.1	2.0	100
+24	Biha r*	71.8	11.2	0.0	15.5	1.1	0.5	100
+
+61)
+df.drop(1,axis=0,inplace=True)
+df
+
+States	Agriculture	Manufacturing	Construction	Trade Hotels & Restaurants	Community, Social and Personal Services	Others	Total
+0	Andhra Pradesh	69.0	9.7	3.2	9.0	7.1	2.0	100
+2	Bihar	71.8	11.2	0.0	15.5	1.1	0.5	100
+3	Chhattisgarh	87.9	2.4	0.9	7.2	1.7	NaN	100
+4	Delhi	NaN	11.1	NaN	57.8	31.1	NaN	100
+5	Gujarat	76.7	2.6	0.3	17.8	1.5	1.2	100
+6	Haryana	65.6	3.8	7.0	8.1	15.5	NaN	100
+7	Jharkhand	65.3	14.6	4.3	12.1	2.8	0.9	100
+8	Karnataka	82.6	9.3	1.2	5.7	0.3	0.9	100
+9	Kerala	19.2	32.8	NaN	32.0	16.1	NaN	100
+10	Madhya Pradesh	82.9	9. 9	1.5	4.3	1.3	0.0	100
+11	Maharashtra	82.6	5.3	1.9	5.8	4.1	0.3	100
+12	Orissa	73.2	17.4	3.3	3.3	1.1	1.8	100
+13	Punjab	67.9	12.7	1.2	7.2	8.4	2.6	100
+14	Rajasthan	75.8	9.6	2.9	7.3	0.4	4.0	100
+15	Tamil Nadu	39.5	44.6	5.9	5.7	2.7	1.7	100
+16	Uttar Pradesh	61.2	25.3	0.4	9.7	2.1	1.2	100
+17	Uttar Pradesh	61.2	25.3	0.4	9.7	2.1	1.2	100
+18	West Bengal	34.6	43.9	3.3	9.7	6.6	2.0	100
+19	Himachal Pradesh	87.4	NaN	NaN	6.7	4.7	1.2	100
+20	Uttarakhand	80.7	4.7	5.2	9.3	NaN	NaN	100
+21	Uttarakhand	80.7	4.7	5.2	9.3	NaN	NaN	100
+22	All India	68.1	16.6	2.0	8.5	3.4	1.5	100
+23	Andhra Pradesh	69.0	9.7	4.0	8.0	7.1	2.0	100
+24	Biha r*	71.8	11.2	0.0	15.5	1.1	0.5	100
+
+62)
+rename_col=['Category' if 'Category of States' in colname else
+            'Agri' if 'Agricultue' in colname else colname for colname in df
+           ]
+
+63)
+rename_col
+
+['Category',
+ 'States',
+ 'Agriculture',
+ 'Manufacturing',
+ 'Construction',
+ 'Trade Hotels & Restaurants',
+ 'Community, Social and Personal Services',
+ 'Others',
+ 'Total']
+
+64)
+states_match=df['States']=='Andhra Pradesh'
+states_match
+
+0      True
+1     False
+2     False
+3     False
+4     False
+5     False
+6     False
+7     False
+8     False
+9     False
+10    False
+11    False
+12    False
+13    False
+14    False
+15    False
+16    False
+17    False
+18    False
+19    False
+20    False
+21    False
+22    False
+23     True
+24    False
+Name: States, dtype: bool
+
+65)
+states_match=df[df['States']=='Andhra Pradesh']
+states_match
+
+Category of States	States	Agriculture	Manufacturing	Construction	Trade Hotels & Restaurants	Community, Social and Personal Services	Others	Total
+0	Non Special Category states	Andhra Pradesh	69.0	9.7	3.2	9.0	7.1	2.0	100
+23	Non Special Category states	Andhra Pradesh	69.0	9.7	4.0	8.0	7.1	2.0	100
+
+66)
+states_not_match=df[df['States']!='Andhra Pradesh']
+states_not_match
+
+Category of States	States	Agriculture	Manufacturing	Construction	Trade Hotels & Restaurants	Community, Social and Personal Services	Others	Total
+1	Non Special Category states	Assam	69.3	8.4	1.8	7.8	11.0	1.8	100
+2	Non Special Category states	Bihar	71.8	11.2	0.0	15.5	1.1	0.5	100
+3	Non Special Category states	Chhattisgarh	87.9	2.4	0.9	7.2	1.7	NaN	100
+4	Non Special Category states	Delhi	NaN	11.1	NaN	57.8	31.1	NaN	100
+5	Non Special Category states	Gujarat	76.7	2.6	0.3	17.8	1.5	1.2	100
+6	Non Special Category states	Haryana	65.6	3.8	7.0	8.1	15.5	NaN	100
+7	Non Special Category states	Jharkhand	65.3	14.6	4.3	12.1	2.8	0.9	100
+8	Non Special Category states	Karnataka	82.6	9.3	1.2	5.7	0.3	0.9	100
+9	Non Special Category states	Kerala	19.2	32.8	NaN	32.0	16.1	NaN	100
+10	Non Special Category states	Madhya Pradesh	82.9	9. 9	1.5	4.3	1.3	0.0	100
+11	Non Special Category states	Maharashtra	82.6	5.3	1.9	5.8	4.1	0.3	100
+12	Non Special Category states	Orissa	73.2	17.4	3.3	3.3	1.1	1.8	100
+13	Non Special Category states	Punjab	67.9	12.7	1.2	7.2	8.4	2.6	100
+14	Non Special Category states	Rajasthan	75.8	9.6	2.9	7.3	0.4	4.0	100
+15	Non Special Category states	Tamil Nadu	39.5	44.6	5.9	5.7	2.7	1.7	100
+16	Non Special Category states	Uttar Pradesh	61.2	25.3	0.4	9.7	2.1	1.2	100
+17	Non Special Category states	Uttar Pradesh	61.2	25.3	0.4	9.7	2.1	1.2	100
+18	Non Special Category states	West Bengal	34.6	43.9	3.3	9.7	6.6	2.0	100
+19	Special Category States	Himachal Pradesh	87.4	NaN	NaN	6.7	4.7	1.2	100
+20	Special Category States	Uttarakhand	80.7	4.7	5.2	9.3	NaN	NaN	100
+21	Special Category States	Uttarakhand	80.7	4.7	5.2	9.3	NaN	NaN	100
+22	All India	All India	68.1	16.6	2.0	8.5	3.4	1.5	100
+24	Non Special Category states*	Biha r*	71.8	11.2	0.0	15.5	1.1	0.5	100
+
+67)
+df['States'].value_counts()
+
+Andhra Pradesh      2
+Uttarakhand         2
+Uttar Pradesh       2
+Assam               1
+All India           1
+Himachal Pradesh    1
+West Bengal         1
+Tamil Nadu          1
+Rajasthan           1
+Punjab              1
+Orissa              1
+Maharashtra         1
+Madhya Pradesh      1
+Kerala              1
+Karnataka           1
+Jharkhand           1
+Haryana             1
+Gujarat             1
+Delhi               1
+Chhattisgarh        1
+Bihar               1
+Biha      r*        1
+Name: States, dtype: int64
+
+68)
+df['States'].value_counts().plot()
+
+<Axes: >
+
+
+
+
+
+ 69)
+df['States'].value_counts().plot(kind='bar')
+
+<Axes: >
+
+
+
+
+
+
+
+70)
+df['States'].unique()
+
+array(['Andhra Pradesh', 'Assam', 'Bihar', 'Chhattisgarh', 'Delhi',
+       'Gujarat', 'Haryana', 'Jharkhand', 'Karnataka', 'Kerala',
+       'Madhya Pradesh', 'Maharashtra', 'Orissa', 'Punjab', 'Rajasthan',
+       'Tamil Nadu', 'Uttar Pradesh', 'West Bengal', 'Himachal Pradesh',
+       'Uttarakhand', 'All India', 'Biha      r*'], dtype=object)
+71)
+df['States'].nunique()
+
+22
+
+72)
+df.dtypes
+
+Category of States                          object
+States                                      object
+Agriculture                                float64
+Manufacturing                               object
+Construction                               float64
+Trade Hotels & Restaurants                 float64
+Community, Social and Personal Services    float64
+Others                                     float64
+Total                                        int64
+dtype: object
+
+73)
+df['Manufacturing'] =df['Manufacturing'].replace('9. 9', '9.9')
+df['Manufacturing'] = df['Manufacturing'].astype('float')
+df['Manufacturing']
+df.dtypes
+
+Category of States                          object
+States                                      object
+Agriculture                                float64
+Manufacturing                              float64
+Construction                               float64
+Trade Hotels & Restaurants                 float64
+Community, Social and Personal Services    float64
+Others                                     float64
+Total                                        int64
+dtype: object
+ 
